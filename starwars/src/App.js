@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from "axios";
-import Card from "./components/CardStats";
 import Container from "./components/Container"
 
 const App = () => {
