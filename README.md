@@ -27,9 +27,10 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-    React JS is a front-end library that allows components to render on the virtual dom as they update or the information changes. the problem it solves is preventing the browser from refreshing anytime information on the page changes as well as making applications more modular with components
+    React JS is a front-end library that allows components to render on the virtual dom as they update or the information changes. the problem it solves is preventing the browser from refreshing anytime the state of an object on the page changes as well as making applications more modular with components
 
 - [ ] What does it mean to _think_ in react?
+    think in react refers to not splitting html and JavaScript into separate files but rather grouping js and html into their own individual components.
 
 - [ ] Describe state.
     state is the current information being render onscreen and when the state changes React renders new information on screen
