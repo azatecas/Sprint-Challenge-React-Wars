@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from "axios";
+import Card from "./components/Card";
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -11,11 +12,15 @@ const App = () => {
   // sync up with, if any.
 
   const [swCharacter, setSwCharacter] = useState([]);
+  
+
   useEffect(() => {
+    //request api response and assign to swCharacters
     axios
       .get(`https://swapi.co/api/people/`)
       .then(res => {
-        console.log(res.data.results);
+        // console.log(res.data.results);
+        setSwCharacter(res.data.results)
       })
       .catch(error => {
         console.log(`this is an error in App()`, error);
@@ -26,6 +31,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <Card data={swCharacter} />
     </div>
   );
 }
